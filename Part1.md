@@ -7,6 +7,6 @@ Model checking in this book means we use a model to represent a system then chec
 
 ## Transition system
 
-**Transition system** is frequently used to model a system. We define Transition System as a tuple $<S,Act,\rightarrow,I,AP,L>$ in which $S$ is the set of states, $Act$ is the set of possible actions of the system, $\rightarrow:S \times Act \times S$ is the transition from a state to another state by an action, $I$ is the initial states, $AP$ is the set of atomic propositions that uses logic propositions to describe some facts, $L:S \rightarrow 2^{AP}$ is labelling function that uses the combination to describe 'what is true' in a state.
+**Transition system** is frequently used to model a system. We define Transition System as a tuple $<S,Act,I,AP,L>$ in which $S$ is the set of states, $Act$ is the set of possible actions of the system, $\rightarrow:S \times Act \times S$ is the transition from a state to another state by an action, $I$ is the initial states, $AP$ is the set of atomic propositions that uses logic propositions to describe some facts, $L:S \rightarrow 2^{AP}$ is labelling function that uses the combination to describe 'what is true' in a state.
 
-For instance, if we have a Beverage Machine, we can insert coins, select 'soda' or 'beer', and we can take drinks away, then we can model $S=\{pay, select, soda, beer\}$, $Act=\{insert\_coin, get\_soda, get\_beer, \tau\}$, $I=\{pay\}$, $AP=\{drink, paid\}.
+For instance, if we have a Beverage Machine, we can insert coins, select 'soda' or 'beer', and we can take drinks away, then we can model $S=\{pay, select, soda, beer\}$, $Act=\{insert/_coin, get/_soda, get/_beer, \tau\}$, $I=\{pay\}$, $AP=\{drink, paid\}$.
