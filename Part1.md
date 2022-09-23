@@ -29,5 +29,9 @@ Here is one of the most important thing, how to check if a TS satisfy a LT prope
 Let's see an example, the left and middle pic of figure3-7 are two traffic lights, and the right part is the synchronization of them, a TS.
 ![fig3-7](https://user-images.githubusercontent.com/40670333/191707965-8ca33aaa-3cc7-481c-af20-12fe86dd6546.png)
 
-For the TS, we have $AP=\{r_1,r_2,g_1,g_2\}$ describe the colors of two lights.
+For the TS, we have $AP=\{red_1,red_2,green_1,green_2\}$ describe the colors of two lights.
 What we want is checking 'if the first light can be infinitely often green', so this property is the set of all words with infinitely many $g_1$. In this system, the answer should be yes.
+
+## Summary
+
+Transition system has states, actions, atomic propositions, labels, transitions. We excute from the initial states then we got an execution, and taking states generates paths. A linear time property consists of all possible words with some property, and the link between property and transition system is the trace. We take the labels of the states in path then we got a sequence of symbols, we call it a trace. By checking if the system can have a trace that is NOT in a property, we can check if the system satisfies some property.
